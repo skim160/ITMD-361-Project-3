@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxa1SjC-JF_D0VabSXZDEdGY71Kk2CPzI&callback=initMap">
+    </script>
+  <title>ITMD-361 Project 2 Soojin Kim</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+  <nav id= "link">
+  <ul>
+    <li><a href="index.html" title="Home">Home</a></li>
+	<li><a href="resume.html" title="Resume">Resume</a></li>
+	<li><a href="hobbies.html" title="Hobbies">Hobbies</a></li>
+	<li><a href="map.html" title="Map">Map</a></li>
+  </ul>
+  </nav>	
+  </header>
+  
+<body>
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var myLatlng = {lat: 37.551, lng: 126.988};
+      var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: myLatlng
+      });
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Click to zoom'
+      });
+      map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker.getPosition());
+          }, 3000);
+      });
+      marker.addListener('click', function() {
+          map.setZoom(15);
+          map.setCenter(marker.getPosition());
+      });
+    }
+  </script>
+  
+  <footer class="foot">
+  <p>Copyright (c) 2017 Soojin Kim.</p>
+  </footer>
+  
+</body>
+</html>
