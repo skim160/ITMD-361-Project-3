@@ -224,7 +224,6 @@ nav#link a:hover {
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animaion-direction: alternate;
 }
 @keyframes colors {
   0%{background-color: red;}
