@@ -94,8 +94,6 @@ nav#link {
 nav#link ul {
   list-style-type: none;
   overflow: hidden;
-  margin-left:33%;
-  margin-right:33%;
 } 
 nav#link ul li a {
   display: block;
