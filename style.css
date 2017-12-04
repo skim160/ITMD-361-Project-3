@@ -172,6 +172,13 @@ nav#link a:hover {
   border: 2px solid gray;
   width:95%;	
 }
+#exp2{
+  overflow: auto;
+  margin: 20px;
+  padding: 3px;
+  border: 2px solid gray;
+  width:95%;	
+}
 #pho {
   margin: 10px 30px 10px 30px;
   font-size: 15px;
