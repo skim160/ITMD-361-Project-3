@@ -82,29 +82,22 @@ h4{
 }
 
 /*nav css*/
-nav#link {
-  background-color: black;
-  position: relative;
-  top: 0px;
-  width: 100%;
-  margin-bottom: 20px;
-  margin-top: 0px;
-  padding: 10px 0px;
-}
 nav#link ul {
-  list-style-type: none;
-  overflow: hidden;
+  background-color: black;
+  text-align:center;
+  top:0px;
+  padding:18px;
+  margin-left:0px;
+  margin-right:0px;
 } 
+nav#link ul li{
+  display:inline;
+}
 nav#link ul li a {
-  display: block;
-  padding: 10px;
-  font-size: 15px;
-  color:	white;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Roboto", san-serif;
+  text-decoration:none;
+  font:bold 18px 'Roboto', sans-serif;
+  padding:0px 38px;
+  color:white;
 } 
 nav#link a:hover {
   color: gray;
